@@ -1,18 +1,15 @@
-version: '3'
+version: "3"
 services:
-  db: 
+  db:
     image: postgres
-    restart: always
-    environment:
-      - POSTGRES_PASSWORD=mypassword
-    volumes: 
+    volumes:
       - ./postgres:/var/lib/postgresql/data
-    ports:
-      - "5432"
-  web: 
+    environment:
+      POSTGRES_PASSWORD: mypassword
+  web:
     build: .
-    command: bundle exec rails s -p 3000 -b '0.0.0.0'
-    volumes: 
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
       - .:/myapp
     ports:
       - "3000:3000"
