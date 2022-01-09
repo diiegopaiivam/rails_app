@@ -26,7 +26,7 @@ Projeto **Open Source** desenvolvido para servir de modelo Padrão para desenvol
 #####  - **Abra o arquivo docker-compose.yml e altere o parâmetro POSTGRESS_PASSWORD para uma senha da sua escolha**
 #####  - **Dentro do seu terminal execute o comando:**
     - docker-compose run --no-deps web rails new . --force --database=postgresql 
-  OBS.: Esse comando fará com que você crie uma aplicação rails dentro do container já preparada com as configurações do posrgres
+  OBS.: Esse comando fará com que você crie uma aplicação rails dentro do container já preparada com as configurações do postgres
 ##### - **Caso esteja em um ambiente linux será necessário alterar as permissões de usuário dos diretórios da aplicação. Você deverá executar o seguinte comando:**
     - sudo chown -R $USER:$USER .
 ##### - **Execute o comando para a aplicação realizar a instalação das gems que foram inseridas automaticamente no Gemfile**
