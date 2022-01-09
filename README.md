@@ -20,10 +20,10 @@ Projeto **Open Source** desenvolvido para servir de modelo Padrão para desenvol
 #### **INSTALAÇÃO** 
 
 #####  - **Clone o repositório git na sua máquina:**
-  - git clone https://github.com/diiegopaiivam/rails_app.git
+    - git clone https://github.com/diiegopaiivam/rails_app.git
 #####  - **Abra o arquivo docker-compose.yml e altere o parâmetro POSTGRESS_PASSWORD para uma senha da sua escolha**
 #####  - **Dentro do seu terminal execute o comando:**
-  - docker-compose run --no-deps web rails new . --force --database=postgresql <br/>
+    - docker-compose run --no-deps web rails new . --force --database=postgresql <br/>
   OBS.: Esse comando fará com que você crie uma aplicação rails dentro do container já preparada com as configurações do posrgres
 ##### - **Caso esteja em um ambiente linux será necessário alterar as permissões de usuário dos diretórios da aplicação. Você deverá executar o seguinte comando:**
     - sudo chown -R $USER:$USER .
