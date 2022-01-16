@@ -21,8 +21,10 @@ Projeto **Open Source** desenvolvido para servir de modelo Padrão para desenvol
 
 #####  - **Clone o repositório git na sua máquina:**
     - git clone https://github.com/diiegopaiivam/rails_app.git
+#### - **Entre dentro da pasta do projeto:**
+    - cd /rails_app
 #####  - **Remova o remote origin do repositório através do seguinte comando:**
-    - git remove remote origin
+    - git remote remove origin
 #####  - **Abra o arquivo docker-compose.yml e altere o parâmetro POSTGRESS_PASSWORD para uma senha da sua escolha**
 #####  - **Dentro do seu terminal execute o comando:**
     - docker-compose run --no-deps web rails new . --force --database=postgresql 
